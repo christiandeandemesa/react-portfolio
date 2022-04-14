@@ -1,0 +1,135 @@
+@use '../base';
+
+#sidebar {
+	height: 100%;
+	width: 60px;
+	top: 0;
+	background: black;
+	position: absolute;
+	z-index: 3;
+	min-height: 500px;
+}
+
+img {
+	margin-top: 10%;
+	padding: 5px;
+}
+
+#page_links {
+	height: 210px;
+	width: 100%;
+	top: 30%;
+	display: block;
+	position: absolute;
+	text-align: center;
+
+	a {
+		height: 50px;
+		font-size: 30px;
+		color: base.$concrete;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		text-decoration: none;
+
+		&:hover {
+			color: base.$sand;
+
+			svg {
+				opacity: 0;
+				transition: 0.2s ease-in-out;
+			}
+
+			&:after {
+				opacity: 1;
+				transition: 0.7s ease-in-out;
+			}
+		}
+
+		&:after {
+			content: '';
+			font-size: 9px;
+			letter-spacing: 2px;
+			font-weight: bold;
+			position: absolute;
+			opacity: 0;
+		}
+	}
+
+	#home {
+		&:after {
+			content: 'HOME';
+		}
+	}
+	#about {
+		&:after {
+			content: 'ABOUT';
+		}
+	}
+	#projects {
+		&:after {
+			content: 'PROJECTS';
+		}
+	}
+	#contact {
+		&:after {
+			content: 'CONTACT';
+		}
+	}
+}
+
+#web_links {
+	height: 130px;
+	width: 100%;
+	top: 85%;
+	display: block;
+	position: absolute;
+	text-align: center;
+
+	a {
+		height: 50px;
+		font-size: 30px;
+		color: base.$concrete;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		&:hover {
+			color: base.$turquoise;
+
+			svg {
+				opacity: 0;
+				transition: 0.2s ease-in-out;
+			}
+
+			&:after {
+				opacity: 1;
+				transition: 0.7s ease-in-out;
+			}
+		}
+
+		&:after {
+			content: '';
+			font-size: 9px;
+			letter-spacing: 2px;
+			font-weight: bold;
+			position: absolute;
+			opacity: 0;
+		}
+	}
+
+	#github {
+		&:after {
+			content: 'GITHUB';
+		}
+	}
+	#linkedin {
+		&:after {
+			content: 'LINKEDIN';
+		}
+	}
+}

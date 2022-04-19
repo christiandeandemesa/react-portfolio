@@ -1,19 +1,22 @@
 @use '../base';
 
+// Sidebar.
 #sidebar {
 	height: 100%;
-	width: 60px;
+	width: 5vw;
 	top: 0;
 	background: black;
 	position: absolute;
 	z-index: 3;
 }
 
+// Image.
 img {
 	margin-top: 10%;
 	padding: 5px;
 }
 
+// Portfolio links.
 #page_links {
 	height: 210px;
 	width: 100%;
@@ -22,6 +25,7 @@ img {
 	position: absolute;
 	text-align: center;
 
+	// Hover effect.
 	a {
 		height: 50px;
 		font-size: 30px;
@@ -80,6 +84,7 @@ img {
 	}
 }
 
+// Github and LinkedIn links.
 #web_links {
 	height: 100px;
 	width: 100%;
@@ -88,6 +93,7 @@ img {
 	position: absolute;
 	text-align: center;
 
+	// Hover effect.
 	a {
 		height: 50px;
 		font-size: 30px;

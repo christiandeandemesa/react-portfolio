@@ -1,14 +1,13 @@
 // Imports _base.scss.
 @use '../base';
 
+// Container.
 #home {
 	height: 100%;
-	width: 100%;
-	// Moved so the sidebar doesn't cover it.
-	margin-left: 60px;
+	width: 95vw;
+	margin-left: 5vw;
 	padding: 100px;
-
-	// Changed z-index so the text and link appear over the particles effect.
+	// Changed the position and z-index so the text and link appear over the particles effect.
 	position: absolute;
 	z-index: 1;
 

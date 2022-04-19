@@ -27,6 +27,7 @@ function Home() {
 						Hello, <br />
 						I'm Christian Demesa
 					</h1>
+
 					<TypeWriterEffect
 						// Styles the multiple texts.
 						textStyle={{
@@ -80,7 +81,7 @@ function Home() {
 						// Styling the foreground canvas.
 						cover: {
 							// Color of the foreground canvas.
-							color: '#041aaf'
+							color: '#000000' //'#041aaf'
 						}
 					},
 

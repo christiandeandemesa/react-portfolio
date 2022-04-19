@@ -1,0 +1,58 @@
+@use '../base';
+
+// Container.
+#projects {
+	height: 80vh;
+	width: 95vw;
+	margin-left: 5vw;
+	padding: 100px;
+
+	// Slide hover effect.
+	.btn {
+		height: 50px;
+		width: 150px;
+		color: white;
+		font-family: base.$plain-font;
+		font-size: 1.5rem;
+		text-align: center;
+		line-height: 50px;
+		cursor: pointer;
+		transition: all 0.5s;
+
+		&::before {
+			content: '';
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			background-color: rgba(0, 0, 0, 0.1);
+			transition: all 0.3s;
+		}
+
+		&:hover::before {
+			opacity: 0;
+			transform: scale(0.5, 0.5);
+		}
+
+		&::after {
+			content: 'DEMO';
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+			opacity: 0;
+			transition: all 0.3s;
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			transform: scale(1.2, 1.2);
+		}
+
+		&:hover::after {
+			opacity: 1;
+			transform: scale(1, 1);
+		}
+	}
+}

@@ -1,5 +1,7 @@
 import {NavLink} from 'react-router-dom';
+// Image.
 import Logo from '../images/logo.png';
+// React-icons.
 import {RiHome2Fill} from 'react-icons/ri';
 import {GoPerson} from 'react-icons/go';
 import {FaLaptopCode, FaEnvelope} from 'react-icons/fa';
@@ -9,9 +11,10 @@ import styles from './Sidebar.module.scss';
 function Sidebar() {
 	return (
 		<div id={styles.sidebar}>
-			{/* Imported image. */}
+			{/* Image. */}
 			<img src={Logo} alt='Logo' />
 
+			{/* Portfolio links. */}
 			<nav id={styles.page_links}>
 				<NavLink
 					to='/home'
@@ -52,6 +55,7 @@ function Sidebar() {
 				</NavLink>
 			</nav>
 
+			{/* Github and LinkedIn links. */}
 			<nav id={styles.web_links}>
 				<a
 					href='https://github.com/christiandeandemesa'

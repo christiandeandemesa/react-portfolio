@@ -1,0 +1,22 @@
+// Imports _base.scss.
+@use '../base';
+
+#home {
+	height: 100%;
+	width: 100%;
+	// Moved so the sidebar doesn't cover it.
+	margin-left: 60px;
+	padding: 100px;
+
+	// Changed z-index so the text and link appear over the particles effect.
+	position: absolute;
+	z-index: 1;
+
+	// Nesting in sass.
+	#home_text {
+		height: 35%;
+		// Using variables in _base.scss.
+		color: base.$sand;
+		font-family: base.$plain-font;
+	}
+}

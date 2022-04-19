@@ -1,11 +1,35 @@
+@use '../base';
+
 #page {
 	height: 100%;
 	width: 100%;
+	background: base.$royal-blue;
 	position: absolute;
 
 	#top_tags {
+		margin-top: 35px;
+		color: base.$sand;
+		font-family: base.$fancy-font;
+		display: flex;
+		flex-direction: column;
+		margin-left: 120px;
+		border: 1px solid base.$turquoise;
+
+		&_two {
+			margin-left: 40px;
+		}
 	}
 
 	#bot_tags {
+		color: base.$sand;
+		font-family: base.$fancy-font;
+		display: flex;
+		flex-direction: column;
+		margin-left: 120px;
+		border: 1px solid base.$turquoise;
+
+		&_one {
+			margin-left: 40px;
+		}
 	}
 }

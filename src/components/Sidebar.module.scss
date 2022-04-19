@@ -7,7 +7,6 @@
 	background: black;
 	position: absolute;
 	z-index: 3;
-	min-height: 500px;
 }
 
 img {
@@ -50,6 +49,7 @@ img {
 
 		&:after {
 			content: '';
+			font-family: base.$plain-font;
 			font-size: 9px;
 			letter-spacing: 2px;
 			font-weight: bold;
@@ -81,7 +81,7 @@ img {
 }
 
 #web_links {
-	height: 130px;
+	height: 100px;
 	width: 100%;
 	top: 85%;
 	display: block;

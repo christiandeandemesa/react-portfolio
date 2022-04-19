@@ -9,15 +9,16 @@ function Layout() {
 
 			<div id={styles.page}>
 				<span id={styles.top_tags}>
-					<span>return &#40;</span>
-					<span>&lt;div&gt;</span>
+					<span id={styles.top_tags_one}>return &#40;</span>
+					<span id={styles.top_tags_two}>&lt;div&gt;</span>
 				</span>
 
+				{/* Outlet renders all the direct nested Route elements in App. */}
 				<Outlet />
 
 				<span id={styles.bot_tags}>
-					<span>&lt;/div&gt;</span>
-					<span>&#41;;</span>
+					<span id={styles.bot_tags_one}>&lt;/div&gt;</span>
+					<span id={styles.bot_tags_two}>&#41;;</span>
 				</span>
 			</div>
 		</div>

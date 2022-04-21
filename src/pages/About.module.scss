@@ -1,0 +1,32 @@
+@use '../base';
+
+// Container.
+#about {
+	height: 80vh;
+	width: 95vw;
+	margin-left: 5vw;
+	padding: 2%;
+
+	// Title.
+	#title {
+		color: base.$sand;
+		font-family: base.$fancy-font;
+		font-size: 3rem;
+		margin-left: 9vw;
+		position: absolute;
+		z-index: 1;
+	}
+
+	// Text.
+	#text {
+		width: 35vw;
+		color: base.$dark-orange;
+		font-size: 1.15rem;
+		font-family: base.$plain-font;
+		line-height: 250%;
+		margin-top: 6vw;
+		margin-left: 5vw;
+		position: absolute;
+		z-index: 1;
+	}
+}

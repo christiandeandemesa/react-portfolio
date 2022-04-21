@@ -1,4 +1,3 @@
-import {Link} from 'react-router-dom';
 import TypeWriterEffect from 'react-typewriter-effect';
 import Particles from 'react-tsparticles';
 import {loadFull} from 'tsparticles';
@@ -41,7 +40,14 @@ function Home() {
 						// Color of cursor.
 						cursorColor='#000000'
 						// Multiple texts that will be typed out.
-						multiText={['Father', 'Philosopher', 'Pianist', 'Hiker', 'React Developer']}
+						multiText={[
+							'a Blank Slate',
+							'Father',
+							'Philosopher',
+							'Pianist',
+							'Hiker',
+							'and React Developer'
+						]}
 						// Delay between multiple texts in milliseconds.
 						multiTextDelay={2000}
 						// Loops through the multiple texts indefinitely.

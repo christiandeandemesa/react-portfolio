@@ -15,6 +15,7 @@ import styles from './Projects.module.scss';
 function Projects() {
 	return (
 		<div id={styles.projects}>
+			<p id={styles.title}>&lt;h1&gt; Projects &lt;/h1&gt;</p>
 			<Swiper
 				// Swiper modules.
 				modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -36,7 +37,7 @@ function Projects() {
 						href='https://google.com'
 						target='_blank'
 						rel='noreferrer'
-						className={styles.btn}
+						className={styles.demo}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
@@ -45,7 +46,7 @@ function Projects() {
 						href='https://google.com'
 						target='_blank'
 						rel='noreferrer'
-						className={styles.btn}
+						className={styles.demo}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
@@ -54,7 +55,7 @@ function Projects() {
 						href='https://google.com'
 						target='_blank'
 						rel='noreferrer'
-						className={styles.btn}
+						className={styles.demo}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
@@ -63,7 +64,7 @@ function Projects() {
 						href='https://google.com'
 						target='_blank'
 						rel='noreferrer'
-						className={styles.btn}
+						className={styles.demo}
 					/>
 				</SwiperSlide>
 				{/* Give space between the slides and bullet points. */}

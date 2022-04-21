@@ -32,14 +32,14 @@ function Home() {
 						// Styles the multiple texts.
 						textStyle={{
 							fontFamily: 'Merriweather, serif',
-							color: '#fba541',
+							color: '#000000',
 							fontWeight: 'bold',
 							fontSize: '2em'
 						}}
 						// Delay before first text is typed in milliseconds.
 						startDelay={1000}
 						// Color of cursor.
-						cursorColor='#fba541'
+						cursorColor='#000000'
 						// Multiple texts that will be typed out.
 						multiText={['Father', 'Philosopher', 'Pianist', 'Hiker', 'React Developer']}
 						// Delay between multiple texts in milliseconds.
@@ -50,11 +50,6 @@ function Home() {
 						typeSpeed={90}
 					/>
 				</div>
-
-				{/* Links to Contact page. */}
-				<Link to='/contact' id={styles.home_link}>
-					CONTACT ME
-				</Link>
 			</div>
 			<Particles
 				id='tsparticles'
@@ -81,7 +76,7 @@ function Home() {
 						// Styling the foreground canvas.
 						cover: {
 							// Color of the foreground canvas.
-							color: '#000000' //'#041aaf'
+							color: '#ffffff'
 						}
 					},
 
@@ -124,7 +119,7 @@ function Home() {
 								// Delay between each generation of particles.
 								delay: 0.01,
 								// How many particles are generated at a time.
-								quantity: 5
+								quantity: 2
 							}
 						}
 					},

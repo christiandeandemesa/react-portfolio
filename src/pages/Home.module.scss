@@ -6,7 +6,7 @@
 	height: 100%;
 	width: 95vw;
 	margin-left: 5vw;
-	padding: 100px;
+	padding: 8%;
 	// Changed the position and z-index so the text and link appear over the particles effect.
 	position: absolute;
 	z-index: 1;
@@ -15,7 +15,6 @@
 	#home_text {
 		height: 35%;
 		// Using variables in _base.scss.
-		color: base.$sand;
 		font-family: base.$plain-font;
 	}
 }

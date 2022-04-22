@@ -12,7 +12,7 @@ function Sidebar() {
 	return (
 		<div id={styles.sidebar}>
 			{/* Image. */}
-			<img src={Logo} alt='Logo' />
+			<img src={Logo} alt='Logo' id={styles.logo} />
 
 			{/* Portfolio links. */}
 			<nav id={styles.page_links}>

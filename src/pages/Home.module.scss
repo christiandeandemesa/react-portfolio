@@ -10,6 +10,7 @@
 	// Changed the position and z-index so the text and link appear over the particles effect.
 	position: absolute;
 	z-index: 1;
+	cursor: pointer;
 
 	// Nesting in sass.
 	#home_text {

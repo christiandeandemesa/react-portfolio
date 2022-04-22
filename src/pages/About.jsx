@@ -1,9 +1,24 @@
 import {Canvas} from '@react-three/fiber';
 import Globe from '../components/Globe';
 import Loader from 'react-loaders';
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import styles from './About.module.scss';
 
 function About() {
+	// Styling for the notification pop-up.
+	const notify = () =>
+		toast('Left-click to rotate the canvas. ⭐ Right-click to move the earth. 🌎', {
+			position: 'bottom-right',
+			autoClose: 4000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: false,
+			progress: undefined,
+			theme: 'dark'
+		});
+
 	return (
 		<>
 			<div id={styles.about}>
@@ -28,7 +43,16 @@ function About() {
 				<Canvas>
 					<Globe />
 				</Canvas>
+
+				{/* Button for notification. */}
+				<button onClick={notify} id={styles.btn}>
+					Click Me!
+				</button>
+				{/* Notification pop-up. */}
+				<ToastContainer />
 			</div>
+
+			{/* Loading pacman screen. */}
 			<Loader type='pacman' />
 		</>
 	);

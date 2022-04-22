@@ -47,6 +47,27 @@
 			animation: fadeInAndPulse 2.5s forwards;
 		}
 	}
+
+	// Button.
+	#btn {
+		color: white;
+		background: transparent;
+		border: 3px solid white;
+		font-family: base.$plain-font;
+		padding: 0.5%;
+		margin-top: 2vh;
+		margin-left: 64vw;
+		position: absolute;
+		animation: fadeIn 2.5s forwards;
+		cursor: pointer;
+		transition: all 0.5s ease;
+
+		// Button hover effect.
+		&:hover {
+			color: base.$turquoise;
+			background: white;
+		}
+	}
 }
 
 // Fade in and pulse animation.
@@ -67,5 +88,20 @@
 	to {
 		opacity: 1;
 		transform: scale3d(1, 1, 1);
+	}
+}
+
+// Fade in animation.
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
 	}
 }

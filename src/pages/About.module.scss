@@ -15,20 +15,53 @@
 		margin-left: 9vw;
 		position: absolute;
 		z-index: 1;
-		animation: fadeIn 1s forwards;
-		animation-delay: 1s;
+		animation: fadeInAndPulse 4s forwards;
 	}
 
 	// Text.
-	#text {
+	#text_container {
 		width: 35vw;
 		color: base.$dark-orange;
-		font-size: 1.15rem;
+		font-size: 1.1rem;
 		font-family: base.$plain-font;
-		line-height: 250%;
+		line-height: 5vh;
 		margin-top: 6vw;
 		margin-left: 5vw;
 		position: absolute;
 		z-index: 1;
+
+		// Hello text.
+		#text_top {
+			margin-bottom: 3vh;
+			animation: fadeInAndPulse 4.25s forwards;
+		}
+
+		// Hobbies text.
+		#text_mid {
+			margin-bottom: 3vh;
+			animation: fadeInAndPulse 4.5s forwards;
+		}
+
+		// Skills text.
+		#text_bot {
+			animation: fadeInAndPulse 4.75s forwards;
+		}
+	}
+}
+
+// Fade in and pulse animation.
+@keyframes fadeInAndPulse {
+	from {
+		opacity: 0;
+		transform: scale3d(1, 1, 1);
+	}
+
+	80% {
+		opacity: 1;
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
 	}
 }

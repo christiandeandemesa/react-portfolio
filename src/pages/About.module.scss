@@ -15,7 +15,7 @@
 		margin-left: 9vw;
 		position: absolute;
 		z-index: 1;
-		animation: fadeInAndPulse 4s forwards;
+		animation: fadeInAndPulse 1.5s forwards;
 	}
 
 	// Text.
@@ -33,18 +33,18 @@
 		// Hello text.
 		#text_top {
 			margin-bottom: 3vh;
-			animation: fadeInAndPulse 4.25s forwards;
+			animation: fadeInAndPulse 2s forwards;
 		}
 
 		// Hobbies text.
 		#text_mid {
 			margin-bottom: 3vh;
-			animation: fadeInAndPulse 4.5s forwards;
+			animation: fadeInAndPulse 2.25s forwards;
 		}
 
 		// Skills text.
 		#text_bot {
-			animation: fadeInAndPulse 4.75s forwards;
+			animation: fadeInAndPulse 2.5s forwards;
 		}
 	}
 }
@@ -56,12 +56,16 @@
 		transform: scale3d(1, 1, 1);
 	}
 
+	60% {
+		opacity: 0;
+	}
+
 	80% {
-		opacity: 1;
 		transform: scale3d(1.1, 1.1, 1.1);
 	}
 
 	to {
+		opacity: 1;
 		transform: scale3d(1, 1, 1);
 	}
 }

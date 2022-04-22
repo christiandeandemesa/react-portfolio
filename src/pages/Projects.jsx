@@ -17,7 +17,27 @@ function Projects() {
 	return (
 		<>
 			<div id={styles.projects}>
-				<p id={styles.title}>&lt;h1&gt; Projects &lt;/h1&gt;</p>
+				<p id={styles.title}>
+					<span id={styles.title_one}>&lt;</span>
+					<span id={styles.title_two}>h</span>
+					<span id={styles.title_three}>1</span>
+					<span id={styles.title_four}>&gt;</span>
+					<span id={styles.title_five}> </span>
+					<span id={styles.title_six}>P</span>
+					<span id={styles.title_seven}>r</span>
+					<span id={styles.title_eight}>o</span>
+					<span id={styles.title_nine}>j</span>
+					<span id={styles.title_ten}>e</span>
+					<span id={styles.title_eleven}>c</span>
+					<span id={styles.title_twelve}>t</span>
+					<span id={styles.title_thirteen}>s</span>
+					<span id={styles.title_fourteen}> </span>
+					<span id={styles.title_fifteen}>&lt;</span>
+					<span id={styles.title_sixteen}>/</span>
+					<span id={styles.title_seventeen}>h</span>
+					<span id={styles.title_eighteen}>1</span>
+					<span id={styles.title_nineteen}>&gt;</span>
+				</p>
 				<Swiper
 					// Swiper modules.
 					modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -31,6 +51,7 @@ function Projects() {
 					pagination={{clickable: false}}
 					// Creates scrollbar and makes it draggable.
 					scrollbar={{draggable: true}}
+					id={styles.swiper}
 				>
 					{/* Each SwiperSlide component is a slide. */}
 					<SwiperSlide>

@@ -14,55 +14,134 @@
 		font-size: 3rem;
 		margin-left: 9vw;
 		margin-bottom: 2vh;
+
+		// Individual characters in title.
+		#title_one {
+			animation: fadeIn 2.5s forwards;
+		}
+		#title_two {
+			animation: fadeIn 2.6s forwards;
+		}
+		#title_three {
+			animation: fadeIn 2.7s forwards;
+		}
+		#title_four {
+			animation: fadeIn 2.8s forwards;
+		}
+		#title_five {
+			animation: fadeIn 2.9s forwards;
+		}
+		#title_six {
+			animation: fadeIn 3s forwards;
+		}
+		#title_seven {
+			animation: fadeIn 3.1s forwards;
+		}
+		#title_eight {
+			animation: fadeIn 3.2s forwards;
+		}
+		#title_nine {
+			animation: fadeIn 3.3s forwards;
+		}
+		#title_ten {
+			animation: fadeIn 3.4s forwards;
+		}
+		#title_eleven {
+			animation: fadeIn 3.5s forwards;
+		}
+		#title_twelve {
+			animation: fadeIn 3.6s forwards;
+		}
+		#title_thirteen {
+			animation: fadeIn 3.7s forwards;
+		}
+		#title_fourteen {
+			animation: fadeIn 3.8s forwards;
+		}
+		#title_fifteen {
+			animation: fadeIn 3.9s forwards;
+		}
+		#title_sixteen {
+			animation: fadeIn 4s forwards;
+		}
+		#title_seventeen {
+			animation: fadeIn 4.1s forwards;
+		}
+		#title_eighteen {
+			animation: fadeIn 4.2s forwards;
+		}
+		#title_nineteen {
+			animation: fadeIn 4.3s forwards;
+		}
 	}
 
-	// Slide hover effect.
-	.demo {
-		height: 50px;
-		width: 150px;
-		color: white;
-		font-family: base.$plain-font;
-		font-size: 1.5rem;
-		text-align: center;
-		line-height: 50px;
-		cursor: pointer;
-		transition: all 0.5s;
+	// Carousel.
+	#swiper {
+		animation: fadeIn 1.5s forwards;
+	}
+}
 
-		// & is a use of the sass parent selector, so &::before means .demo::before.
-		&::before {
-			content: '';
-			height: 100%;
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 1;
-			background-color: rgba(0, 0, 0, 0.1);
-			transition: all 0.3s;
-		}
+// Slide hover effect.
+.demo {
+	height: 50px;
+	width: 150px;
+	color: white;
+	font-family: base.$plain-font;
+	font-size: 1.5rem;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	transition: all 0.5s;
 
-		&:hover::before {
-			opacity: 0;
-			transform: scale(0.5, 0.5);
-		}
+	// & is a use of the sass parent selector, so &::before means .demo::before.
+	&::before {
+		content: '';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background-color: rgba(0, 0, 0, 0.1);
+		transition: all 0.3s;
+	}
 
-		&::after {
-			content: 'DEMO';
-			height: 100%;
-			width: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 1;
-			opacity: 0;
-			transition: all 0.3s;
-			border: 1px solid rgba(255, 255, 255, 0.5);
-			transform: scale(1.2, 1.2);
-		}
+	&:hover::before {
+		opacity: 0;
+		transform: scale(0.5, 0.5);
+	}
 
-		&:hover::after {
-			opacity: 1;
-			transform: scale(1, 1);
-		}
+	&::after {
+		content: 'DEMO';
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		opacity: 0;
+		transition: all 0.3s;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		transform: scale(1.2, 1.2);
+	}
+
+	&:hover::after {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+
+// Fade in animation.
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
 	}
 }

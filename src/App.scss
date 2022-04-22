@@ -1,26 +1,26 @@
 @use './base';
-// Import animate.css.
-@import 'animate.css';
 // Import pacman animation from loaders.css, and must be imported here for it to display.
 @import '~loaders.css/src/animations/pacman.scss';
 
-// Fadeout pacman effect.
+// Pacman loading screen.
 .loader-active {
-	height: 100vh;
-	width: 100vw;
-	background: linear-gradient(to bottom right, base.$royal-blue, base.$turquoise);
 	// Superimposes this over the layout.
 	display: block;
 	position: absolute;
-	top: 0;
-	// fadeOutRight comex from animate.css.
-	animation: fadeOut 1s 1s;
-	animation-fill-mode: forwards;
+	top: 50vh;
+	left: 50vw;
+	// fadeOut comex from animate.css.
+	animation: fadeOut 1s 0.5s forwards;
 	z-index: 2;
+}
 
-	// Centers pacman
-	.loader-inner {
-		margin-top: 50vh;
-		margin-left: 50vw;
+// fadeOut animation.
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
 	}
 }

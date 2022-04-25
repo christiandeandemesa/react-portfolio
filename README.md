@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Portfolio
+A portfolio of mine that the user can interact with. The backend was built with JavaScript, React.js, and Node.js. The frontend was built with JSX, CSS3, SASS, 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Other features utilized include emailjs to send me an email, dotenv to hold my emailjs variables, React-Fiber-Three to create the 3-D Earth, loaders.css for the Pacman loader, React-Loaders for loaders.css, React icons, React-Toastify for notifications, tsParticles for the home screen effect, a typewriter effect on the home screen, Swiper for the projects carousel, SASS modules, reusable Outlet component, Prettier development dependency, a CSS reset provided by https://www.joshwcomeau.com/css/custom-css-reset/, and a logo created at https://www.freelogodesign.org/.
 
-## Available Scripts
+## Open this project [here](https://christian-demesa-portfolio.netlify.app/)
 
-In the project directory, you can run:
+## Features
+- Navigation Bar
+1. User can hover over the logo to make it spin.
+2. User can hover over images to display a word describing that link.
 
-### `npm start`
+- Home
+1. User can create a trail of particles that reveal a rainbow image provided by tsParticles.
+2. User can right-click to push away all particles.
+3. Typewriter effect that changes words.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- About
+1. Loading animations.
+2. Left-click to rotate the canvas the Earth is on.
+3. Right-click to drag Earth across the canvas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Projects
+1. Loading animations.
+2. Hover over and click projects to see their github pages.
+3. Carousel buttons and scroll bar move through projects.
 
-### `npm test`
+- Contact
+1. Loading animations.
+2. Send a message directly to my email.
+3. Frontend validations for the email form.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Upcoming Features
+- react-spring animations when hovering over each page's title ([react-spring@9.4.4 not compatible with react@18](https://github.com/pmndrs/react-spring/issues/1870)).
+- react-leaflet map to replace picture on Contact page ([react-leaflet@3.2.5 not compatible with react@18](https://github.com/PaulLeCam/react-leaflet/issues/936)).
+- Add a separate skill page with gsap animations.
+- Responsive web design for portrait and landscape mobile devices.
+- Cross browser support for Chrome, Firefox, Edge/Internet Explorer, Opera, and Safari.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+- Christian Demesa: https://github.com/christiandeandemesa

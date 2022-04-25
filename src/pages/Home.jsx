@@ -1,7 +1,6 @@
 import TypeWriterEffect from 'react-typewriter-effect';
 import Particles from 'react-tsparticles';
 import {loadFull} from 'tsparticles';
-import Loader from 'react-loaders';
 import Sidebar from '../components/Sidebar';
 import styles from './Home.module.scss';
 

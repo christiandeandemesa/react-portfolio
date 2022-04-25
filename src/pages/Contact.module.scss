@@ -2,32 +2,62 @@
 
 // Container.
 #contact {
-	border: 1px solid red;
 	height: 80vh;
 	width: 95vw;
 	margin-left: 5vw;
 	padding: 2%;
 
-	#form {
-		// Title.
-		#title {
-			color: base.$sand;
-			font-family: base.$fancy-font;
-			font-size: 3rem;
-			margin-left: 9vw;
-			position: absolute;
-			z-index: 1;
+	// Title.
+	#title {
+		color: base.$sand;
+		font-family: base.$fancy-font;
+		font-size: 3rem;
+		margin-left: 9vw;
+		position: absolute;
+		z-index: 1;
+		animation: rubberBandAndFadeIn 2.5s forwards;
+	}
 
-			/* &:hover {
-				animation: rubberBand 1s;
-			} */
+	// Form.
+	#form {
+		width: 30vw;
+		margin-top: 20vh;
+		margin-left: 8.5vw;
+		font-family: base.$plain-font;
+		display: flex;
+		flex-direction: column;
+		gap: 5vh;
+		animation: rubberBandAndFadeIn 2.8s forwards;
+
+		// Button hover effect.
+		#btn {
+			width: 30%;
+			letter-spacing: 2px;
+			transition: all 0.25s;
+
+			&:hover {
+				letter-spacing: 10px;
+			}
 		}
+	}
+
+	// Profile image.
+	#img {
+		height: 60vh;
+		width: auto;
+		border-radius: 12px;
+		top: 0;
+		margin-left: 55vw;
+		position: absolute;
+		animation: rubberBandAndFadeIn 3.1s forwards;
 	}
 }
 
-@keyframes rubberBand {
+// Rubberband animation.
+@keyframes rubberBandAndFadeIn {
 	from {
 		transform: scale3d(1, 1, 1);
+		opacity: 0;
 	}
 
 	30% {
@@ -40,6 +70,7 @@
 
 	50% {
 		transform: scale3d(1.15, 0.85, 1);
+		opacity: 0;
 	}
 
 	65% {
@@ -52,5 +83,6 @@
 
 	to {
 		transform: scale3d(1, 1, 1);
+		opacity: 1;
 	}
 }

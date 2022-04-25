@@ -57,7 +57,7 @@ function Projects() {
 					<SwiperSlide>
 						<img src={Calculator} alt='Currency Calculator' />
 						<a
-							href='https://google.com'
+							href='https://github.com/christiandeandemesa/currency-calculator'
 							target='_blank'
 							rel='noreferrer'
 							className={styles.demo}
@@ -66,7 +66,7 @@ function Projects() {
 					<SwiperSlide>
 						<img src={Pokedex} alt='Pokedex' />
 						<a
-							href='https://google.com'
+							href='https://github.com/christiandeandemesa/pokedex'
 							target='_blank'
 							rel='noreferrer'
 							className={styles.demo}
@@ -75,7 +75,7 @@ function Projects() {
 					<SwiperSlide>
 						<img src={Youtube} alt='Youtube Video Search' />
 						<a
-							href='https://google.com'
+							href='https://github.com/christiandeandemesa/youtube-video-search'
 							target='_blank'
 							rel='noreferrer'
 							className={styles.demo}
@@ -84,7 +84,7 @@ function Projects() {
 					<SwiperSlide>
 						<img src={Noteworthy} alt='Noteworthy' />
 						<a
-							href='https://google.com'
+							href='https://github.com/christiandeandemesa/noteworthy'
 							target='_blank'
 							rel='noreferrer'
 							className={styles.demo}
